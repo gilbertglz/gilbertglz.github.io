@@ -1,5 +1,5 @@
 import React from 'react';
-import './MyHeader.css';
+import './NavigationBar.css';
 import { Link } from 'react-scroll';
 
 function MyHeader(props) {
