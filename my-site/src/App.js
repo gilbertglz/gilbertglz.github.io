@@ -1,5 +1,5 @@
 import './App.css';
-import MyHeader from './Header/MyHeader';
+import NavigationBar from './NavigationBar/NavigationBar';
 import { Element } from 'react-scroll';
 import Home from './Home/Home.js';
 
@@ -7,7 +7,7 @@ import Home from './Home/Home.js';
 function App() {
   return (
     <div className="App">
-      <MyHeader titles={['contact','links','projects','about me', 'home']}/>
+      <NavigationBar titles={['contact','links','projects','about me', 'home']}/>
       <header className="App-header">
       <Element name="home">
         <Home />
