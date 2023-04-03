@@ -8,7 +8,7 @@ function MyHeader(props) {
     <nav className="navigation">
         {titles.map((title, index) => (
           <div className="navigationCell">
-            <Link to={title} smooth={true}><a key={index}>{title}</a></Link>
+            <Link to={title} smooth={true}><a href={title+".js"} key={index}>{title}</a></Link>
           </div>
         ))}
     </nav>

@@ -1,11 +1,10 @@
 import './Home.css';
 import Photo from '../Assets/DSC01230.JPG';
-import React, { Component } from "react";
+import React from "react";
 
 
 function Home () {
 
- 
   return (
     <div className="Home" >
       <div className='headerContainer'>
