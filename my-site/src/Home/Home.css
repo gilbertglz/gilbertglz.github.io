@@ -1,14 +1,94 @@
-.App-header {
+.Home {
   background-color: #0a192f;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-inline:  25%;
+  margin-top:5%;
+  margin-bottom: 10%;
+}
+.myName
+{
+  text-align: left;
+  font-size: calc(30px + 2vmin);
+}
+.myTitle
+{
+  font-size: calc(15px + 2vmin);
+  text-align: left;
+  margin:auto;
+}
+.myDetail
+{
+  animation: FadeRight 2s ease;
+}
+.headerContainer
+{
+  display: flex;
+  align-items: flex-end;
+}
+.headers
+{
+  width:max-content;
+  margin-right: 20%;
+  display: flex;
+  white-space: nowrap;
+  flex-direction: column;
+  animation: bounceInX 3s ease;
+  opacity: 0;
+  animation-fill-mode: forwards; /* Retains the final state of the animation */
+}
+.myImage
+{
+  width: 70%;
+  border-radius: 50%;
+}
+.imageContainer
+{
+  display:flex;
+  width: fit-content;
+  animation: bounceInY 3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes bounceInY {
+  0% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(10%);
+  }
+  80% {
+    transform: translateY(-20%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
+@keyframes bounceInX {
+  0% {
+    opacity: .2;
+    transform: translateX(-100%);
+  }
+  30%{
+    opacity: .5;
+  }
+  100% {
+    opacity:1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes FadeRight{
+
+  0% {
+    opacity: .2;
+    transform: translateX(100%);
+  }
+  30%{
+    opacity: .5;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
