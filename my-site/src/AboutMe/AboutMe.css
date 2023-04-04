@@ -1,14 +1,76 @@
-.App-header {
+.AboutMe {
   background-color: #0a192f;
   min-height: 100vh;
+  color: white;
+  margin: 5% 25% 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  padding-top: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutMeHeader {
+  font-size: calc(24px + 2vmin);
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: calc(10px + 2vmin);
+}
+
+.parOne {
+  font-size: calc(10px + 2vmin);
+}
+
+.parTwo {
+  font-size: calc(8px + 2vmin);
+}
+
+.listLang {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.listIcon {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .listLang {
+    width: 100%;
+  }
+}
+
+.aboutMeHeaderContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.aboutMeWords {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.aboutMeImage {
+  display: flex;
+  align-items: center;
+}
+
+.myImage {
+  width: 80%; /* set the width of the image as desired */
+  height: auto; /* set height to auto to maintain aspect ratio */
+  border-radius: 50%;
+  margin-right: 20px; /* add margin to separate image from list items */
+  display: flex;
+  align-items: center;
+}
+
+.imageContainer {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-end;
 }

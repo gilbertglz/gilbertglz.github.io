@@ -2,9 +2,7 @@
   background-color: #0a192f;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin-inline:  25%;
-  margin-top:5%;
-  margin-bottom: 10%;
+  margin: 15% 25% 20%;
 }
 .myName
 {
@@ -36,19 +34,6 @@
   animation: bounceInX 3s ease;
   opacity: 0;
   animation-fill-mode: forwards; /* Retains the final state of the animation */
-}
-.myImage
-{
-  width: 70%;
-  border-radius: 50%;
-}
-.imageContainer
-{
-  display:flex;
-  width: fit-content;
-  animation: bounceInY 3s ease;
-  opacity: 0;
-  animation-fill-mode: forwards;
 }
 
 @keyframes bounceInY {

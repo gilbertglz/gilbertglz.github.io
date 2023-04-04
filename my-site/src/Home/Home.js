@@ -1,5 +1,4 @@
 import './Home.css';
-import Photo from '../Assets/DSC01230.JPG';
 import React from "react";
 
 
@@ -13,9 +12,6 @@ function Home () {
               I'm Gilbert
             </header>
             <p className="myTitle">Software Developer</p>
-          </div>
-          <div className='imageContainer'>
-          <img className="myImage" src={Photo} alt="Profile"/>
           </div>
       </div>
       <div className="myDetail">
