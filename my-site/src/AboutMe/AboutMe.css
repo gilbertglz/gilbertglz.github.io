@@ -1,16 +1,29 @@
 .AboutMe {
-  background-color: #0a192f;
+  background-color: #112B3C;
   min-height: 100vh;
-  color: white;
+  color: #FCFFE7;
   margin: 5% 25% 10%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding-top: 5%;
 }
-
+p,.listContainer
+{
+  z-index: 1;
+}
+.wrapp
+{
+  background-color: #a15828;
+  opacity: 50%;
+  padding: 20%;
+  position: absolute;
+  border-radius: 50%;
+}
 .aboutMeHeader {
   font-size: calc(24px + 2vmin);
+  color: #FFEBB7;
+  font-weight: 600;
 }
 
 .listContainer {
@@ -21,22 +34,24 @@
 
 .parOne {
   font-size: calc(10px + 2vmin);
+  font-weight: 400;
 }
 
 .parTwo {
   font-size: calc(8px + 2vmin);
+  font-weight: 400;
 }
 
 .listLang {
   width: 50%;
   display: flex;
   align-items: center;
+  font-weight: 400;
 }
 
 .listIcon {
   margin-right: 10px;
 }
-
 @media (max-width: 768px) {
   .listLang {
     width: 100%;
@@ -58,19 +73,20 @@
 .aboutMeImage {
   display: flex;
   align-items: center;
-}
-
+} 
 .myImage {
   width: 80%; /* set the width of the image as desired */
-  height: auto; /* set height to auto to maintain aspect ratio */
+ /* set height to auto to maintain aspect ratio */
   border-radius: 50%;
-  margin-right: 20px; /* add margin to separate image from list items */
+  z-index: 1;
+  /* margin-right: 20px; add margin to separate image from list items */
   display: flex;
   align-items: center;
 }
 
 .imageContainer {
   display: flex;
+  
   width: fit-content;
   justify-content: flex-end;
 }

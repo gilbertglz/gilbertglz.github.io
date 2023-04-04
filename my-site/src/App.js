@@ -10,6 +10,7 @@ import React, { useEffect } from 'react';
 import BackToUp from '@uiw/react-back-to-top';
 import { BsArrowUpCircleFill } from 'react-icons/bs';
 
+
 function App () {
   useEffect(() => {
     const delay = setTimeout(() => {
@@ -18,9 +19,10 @@ function App () {
     return () => clearTimeout(delay);
   }, []);
 
+  
   return (
+    
     <div className="App">
-      
       <NavigationBar titles={['contact','links','projects','about me']}/>
       { <BackToUp size={60}>
           <BsArrowUpCircleFill size={35}/>

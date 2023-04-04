@@ -1,23 +1,29 @@
 .Home {
-  background-color: #0a192f;
+  background-color: #112B3C;
   font-size: calc(10px + 2vmin);
-  color: white;
-  margin: 15% 25% 20%;
+  color: #FCFFE7;
+  margin: 10% 25% 20%;
 }
 .myName
 {
+  font-size: clamp(40px, 8vw, 80px);
   text-align: left;
-  font-size: calc(30px + 2vmin);
+  font-weight: 600;
 }
 .myTitle
 {
-  font-size: calc(15px + 2vmin);
+  font-size: calc(25px + 2vmin);
+  font-weight: 600;
   text-align: left;
-  margin:auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  color:#FFEBB7;
 }
 .myDetail
 {
   animation: FadeRight 2s ease;
+  font-weight: 550;
+  font-size: calc(8px + 2vmin);
 }
 .headerContainer
 {

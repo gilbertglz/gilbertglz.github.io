@@ -14,7 +14,10 @@ function AboutMe() {
   ];
 
   return (
+    
     <div className="AboutMe">
+      <div className='wrapp'>
+      </div>
       <div className="aboutMeHeaderContainer">
         <div className="aboutMeWords">
           <header className="aboutMeHeader">About Me</header>
