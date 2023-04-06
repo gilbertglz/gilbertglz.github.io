@@ -24,6 +24,7 @@ p,.listContainer
   font-size: calc(24px + 2vmin);
   color: #FFEBB7;
   font-weight: 600;
+  z-index: 1;
 }
 
 .listContainer {

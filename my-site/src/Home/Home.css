@@ -1,8 +1,9 @@
 .Home {
-  background-color: #112B3C;
+  /* background-color: #112B3C; */
   font-size: calc(10px + 2vmin);
   color: #FCFFE7;
   margin: 10% 25% 20%;
+  z-index: 1;
 }
 .myName
 {
@@ -24,6 +25,7 @@
   animation: FadeRight 2s ease;
   font-weight: 550;
   font-size: calc(8px + 2vmin);
+  position: relative;
 }
 .headerContainer
 {

@@ -9,7 +9,7 @@ import Contact from './Contact/Contact.js';
 import React, { useEffect } from 'react';
 import BackToUp from '@uiw/react-back-to-top';
 import { BsArrowUpCircleFill } from 'react-icons/bs';
-
+import CirclesHome from './Home/CirclesHome';
 
 function App () {
   useEffect(() => {
@@ -21,9 +21,7 @@ function App () {
 
   
   return (
-    
     <div className="App">
-      <NavigationBar titles={['contact','links','projects','about me']}/>
       { <BackToUp size={60}>
           <BsArrowUpCircleFill size={35}/>
         </BackToUp>
