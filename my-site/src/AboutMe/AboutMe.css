@@ -30,12 +30,15 @@ p,.listContainer
 .listContainer {
   display: flex;
   flex-wrap: wrap;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
+  flex-direction: column;
 }
 
-.parOne {
-  font-size: calc(10px + 2vmin);
+.parOne{
+  font-size: calc(9px + 2vmin);
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
 }
 
 .parTwo {
@@ -47,6 +50,7 @@ p,.listContainer
   width: 50%;
   display: flex;
   align-items: center;
+  flex-direction: row;
   font-weight: 400;
 }
 
@@ -55,28 +59,31 @@ p,.listContainer
 }
 @media (max-width: 768px) {
   .listLang {
-    width: 100%;
+    width: 70%;
   }
 }
 
 .aboutMeHeaderContainer {
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .aboutMeWords {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .aboutMeImage {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: flex-end;
 } 
 .myImage {
-  width: 80%; /* set the width of the image as desired */
+  width: 400px; 
+  height: 400px;
+  overflow: hidden;
  /* set height to auto to maintain aspect ratio */
   border-radius: 50%;
   z-index: 1;
@@ -87,7 +94,5 @@ p,.listContainer
 
 .imageContainer {
   display: flex;
-  
-  width: fit-content;
   justify-content: flex-end;
 }
