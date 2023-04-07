@@ -81,9 +81,9 @@ p,.listContainer
   justify-content: flex-end;
 } 
 .myImage {
-  width: 400px; 
-  height: 400px;
-  overflow: hidden;
+  width:calc(20em); 
+  height: calc(20em);
+  overflow:auto;
  /* set height to auto to maintain aspect ratio */
   border-radius: 50%;
   z-index: 1;
