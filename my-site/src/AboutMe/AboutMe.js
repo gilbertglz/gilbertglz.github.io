@@ -1,6 +1,6 @@
 // AboutMe.js
 import './AboutMe.css';
-import Photo from '../Assets/DSC01230.JPG';
+import Photo from '../Assets/ProfilePicture.JPG';
 import { TbArrowLoopRight } from 'react-icons/tb';
 
 function AboutMe() {

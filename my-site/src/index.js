@@ -3,13 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import CirclesHome from './Home/CirclesHome';
 import NavigationBar from './NavigationBar/NavigationBar.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavigationBar titles={['contact','links','projects','about me']}/>
+    <NavigationBar titles={['about me','projects','links','contact']}/>
     <App />
   </React.StrictMode>
 );
