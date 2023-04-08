@@ -8,7 +8,7 @@ import NavigationBar from './NavigationBar/NavigationBar.js'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NavigationBar titles={['about me','projects','links','contact']}/>
+    <NavigationBar titles={['about me','experience','links','contact']}/>
     <App />
   </React.StrictMode>
 );

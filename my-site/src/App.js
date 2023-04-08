@@ -1,15 +1,13 @@
 import './App.css';
-import NavigationBar from './NavigationBar/NavigationBar';
 import { Element } from 'react-scroll';
 import Home from './Home/Home.js';
 import AboutMe from './AboutMe/AboutMe';
-import Projects from './Projects/Projects.js';
+import Experience from './Experience/Experience.js';
 import Links from './Links/Links.js';
 import Contact from './Contact/Contact.js';
 import React, { useEffect } from 'react';
 import BackToUp from '@uiw/react-back-to-top';
 import { BsArrowUpCircleFill } from 'react-icons/bs';
-import CirclesHome from './Home/CirclesHome';
 
 function App () {
   useEffect(() => {
@@ -37,8 +35,8 @@ function App () {
         <AboutMe />
       </Element>
 
-      <Element name="projects">
-        <Projects />
+      <Element name="experience">
+        <Experience/>
       </Element>
 
       <Element name="links">

@@ -1,0 +1,50 @@
+.ProjectsTable
+{
+    width: 100%;
+    color:aliceblue;
+    background-color: #112B3C;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    
+    /* border:solid;
+    border-color: black; */  
+}
+.jobNavWrapper
+{
+    color:aliceblue;
+    /* background-color: #3f7e64; */
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+.jobNavWrapper button
+{
+    border:none;
+    background-color: #112B3C;
+    height: fit-content;
+    color: inherit;
+    text-decoration: none;
+}
+.jobsTextselected
+{
+    white-space: nowrap;
+    font-size: calc(4px + 2vmin);
+    padding:1em; 
+    border-left: solid;
+    border-color: rgb(239, 239, 239);
+}
+.jobsText
+{    
+    border-left: solid;
+    border-color: #a15828;
+    white-space: nowrap;
+    font-size: calc(4px + 2vmin);
+    padding:1em;   
+}
+.jobPara
+{
+    font-size: 2em;
+    /* border-left: solid;
+    border-color: rgb(140, 210, 204); */
+}

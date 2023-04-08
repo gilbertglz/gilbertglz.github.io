@@ -1,0 +1,14 @@
+.experiencePage
+{
+  min-height: 100vh;
+  margin: 5% 25% 10%;
+  display: flex;
+  flex-direction: column;
+}
+.experiencePage header
+{
+  font-size: calc(24px + 2vmin);
+  color: #FFEBB7;
+  font-weight: 600;
+  z-index: 1;
+}
