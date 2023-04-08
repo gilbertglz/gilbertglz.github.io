@@ -2,7 +2,7 @@ import  './ProjectsTable.css';
 import { useState } from 'react';
 
 function ProjectsTable() {
-  const jobs = ['Securus Monitoring Solutions','Texas A&M University Library','TAMUG Library','G.U.M.'];
+  const jobs = ['Securus Monitoring Solutions','Texas A&M University Libraries','G.U.M.'];
   
 
   const [indexNum, setIndex] = useState(0);
