@@ -4,6 +4,8 @@
   margin: 5% 25% 10%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  /* background-color: black; */
 }
 .experiencePage header
 {
@@ -11,4 +13,22 @@
   color: #FFEBB7;
   font-weight: 600;
   z-index: 1;
+}
+.circleOne
+{
+  position:'absolute';
+  width:'15em';
+  height:'15em';
+  background-color: '#80b3a65b';
+  z-Index:'0';
+}
+.circleTwo
+{
+  margin:'25em';
+  position:'absolute';
+  width:'15em';
+  height:'15em';
+  background-color: #ffd0b075;
+  z-Index:'0';
+  opacity:'.4'
 }

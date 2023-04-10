@@ -1,19 +1,16 @@
 .ProjectsTable
 {
+    margin-top: 5em;
     width: 100%;
     color:aliceblue;
     background-color: #112B3C;
     max-height: fit-content;
     display: flex;
     flex-direction: row;
-    
-    /* border:solid;
-    border-color: black; */  
 }
 .jobNavWrapper
 {
     color:aliceblue;
-    /* background-color: #3f7e64; */
     max-width: max-content;
     display: flex;
     flex-direction: column;
@@ -40,11 +37,22 @@
     border-color: #a15828;
     white-space: nowrap;
     font-size: calc(4px + 2vmin);
-    padding:1em;   
+    padding:1em;  
+    z-index: 1;
 }
 .jobPara
 {
     font-size: 2em;
-    /* border-left: solid;
-    border-color: rgb(140, 210, 204); */
+    z-index: 1;
+}
+.jobTitle a
+{
+    text-decoration: none;
+    color: greenyellow;
+    z-index: 1;
+}
+.jobTitle
+{
+    font-size: smaller;
+    z-index: 1;
 }
