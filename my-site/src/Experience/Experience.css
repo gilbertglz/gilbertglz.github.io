@@ -1,11 +1,16 @@
 .experiencePage
 {
   min-height: 100vh;
-  margin: 5% 25% 10%;
+  margin: 5em 30em 10em;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   /* background-color: black; */
+}
+@media screen and (max-width: 1290px) {
+  .experiencePage {
+    margin: 2rem 15rem 25rem;
+  }
 }
 .experiencePage header
 {

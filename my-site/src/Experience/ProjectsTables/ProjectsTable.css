@@ -10,13 +10,14 @@
 .jobNavWrapper
 {
     max-width: max-content;
+    max-height:max-content;
     display: flex;
     flex-direction: column;
 }
 .jobNavWrapper button
 {
     border:none;
-    height: fit-content;
+    height: 6em;
     color: inherit;
     text-decoration: none;
 }
@@ -63,4 +64,8 @@
 {
     display: flex;
     flex-direction :row;
+}
+.bulletList
+{
+    font-size: .6em;
 }

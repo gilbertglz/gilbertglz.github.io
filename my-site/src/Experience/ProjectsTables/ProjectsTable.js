@@ -1,12 +1,13 @@
 import  './ProjectsTable.css';
 import { useState } from 'react';
 import { TbArrowLoopRight } from 'react-icons/tb';
+import myJson from './ProjectTable.json';
 
 function ProjectsTable() {
   const jobs = ['Securus Monitoring Solutions','Texas A&M University Libraries','G.U.M.'];
   const position = ['Software Developer I','Student Asst.','After-School Prog. Asst.'];
   const time = ['Aug. 2021 - Present','Sept. 2017 - May 2021','Sept. 2017 - Dec. 2018'];
-  const desc = [['here1','here2','here3'],[],[]];
+  const desc = [myJson.securus,[],[]];
   const links =['https://securusmonitoring.com/','https://library.tamu.edu/','https://www.galvestonurbanministries.org/'];
   
   const [indexNum, setIndex] = useState(0);
@@ -36,7 +37,7 @@ function ProjectsTable() {
           {time[index]}
         </div>
           {desc[index].map((bullet, bulletIndex) => (
-            <div key ={bulletIndex} style={{flexDirection:'row', display:'flex',fontSize:'.7em'}}>
+            <div className="bulletList" key ={bulletIndex} style={{flexDirection:'row', display:'flex'}}>
                 <div><TbArrowLoopRight/></div>
                 {bullet}
             </div>

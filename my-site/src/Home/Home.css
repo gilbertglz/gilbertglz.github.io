@@ -2,7 +2,7 @@
   /* background-color: #112B3C; */
   font-size: calc(10px + 2vmin);
   color: #FCFFE7;
-  margin: 10% 25% 20%;
+  margin: 10rem 30rem 25rem;
   z-index: 1;
 }
 .myName
@@ -90,4 +90,8 @@
   }
 }
 
-
+@media screen and (max-width: 1290px) {
+  .Home {
+    margin: 2rem 17rem 25rem;
+  }
+}
