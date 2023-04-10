@@ -1,8 +1,13 @@
 import  './ProjectsTable.css';
 import { useState } from 'react';
+import { TbArrowLoopRight } from 'react-icons/tb';
 
 function ProjectsTable() {
   const jobs = ['Securus Monitoring Solutions','Texas A&M University Libraries','G.U.M.'];
+  const position = ['Software Developer I','Student Asst.','After-School Prog. Asst.'];
+  const time = ['Aug. 2021 - Present','Sept. 2017 - May 2021','Sept. 2017 - Dec. 2018'];
+  const desc = [['here1','here2','here3'],[],[]];
+  const links =['https://securusmonitoring.com/','https://library.tamu.edu/','https://www.galvestonurbanministries.org/'];
   
   const [indexNum, setIndex] = useState(0);
 
@@ -13,35 +18,34 @@ function ProjectsTable() {
   const jobNav = 
   <nav className='jobNavWrapper'>
     {jobs.map((job, index) => (
-      <button key={index} onClick={() => handleClick(index)}>
+      <button key={index} style= {{backgroundColor:'transparent'}}onClick={() => handleClick(index)}>
         <div className={`jobsText${indexNum === index ? 'selected' : ''}`}>
           {job}
         </div>
       </button>
       ))}
   </nav>;
-
-   const einsPar = 
-      <div >
+  
+  const jobName = jobs.map((job, index) => {
+    return (
+      <div key={index}>
         <div className='jobTitle'>
-          Software Developer I @ <a href="https://securusmonitoring.com/">Securus Monitoring Solutions</a>
+          {position[index]} @ <a href={links[index]}>{job}</a>
         </div>
         <div className='jobTime'>
-          August 2021 - Present
+          {time[index]}
         </div>
-        <div className='jobDescription'>
-          bullets & paragraph
-        </div>
+          {desc[index].map((bullet, bulletIndex) => (
+            <div key ={bulletIndex} style={{flexDirection:'row', display:'flex',fontSize:'.7em'}}>
+                <div><TbArrowLoopRight/></div>
+                {bullet}
+            </div>
+          ))}
       </div>
-   ;
+    );
+  });
 
-  const paragraphs = [
-  einsPar,
-  "Zwei",
-  "Drei",
-];
-
-const paragraph = <div className="jobPara">{paragraphs[indexNum]}</div>;
+const paragraph = <div className="jobPara">{jobName[indexNum]}</div>;
   return (
     <div className='ProjectsTable' >
       {jobNav}

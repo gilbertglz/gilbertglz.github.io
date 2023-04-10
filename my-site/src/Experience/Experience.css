@@ -14,21 +14,25 @@
   font-weight: 600;
   z-index: 1;
 }
-.circleOne
-{
-  position:'absolute';
-  width:'15em';
-  height:'15em';
-  background-color: '#80b3a65b';
-  z-Index:'0';
+
+@keyframes color-change {
+  from {
+  }
+  to {
+    background-color: #7e3e2e94;
+  }
 }
-.circleTwo
-{
-  margin:'25em';
-  position:'absolute';
-  width:'15em';
-  height:'15em';
-  background-color: #ffd0b075;
-  z-Index:'0';
-  opacity:'.4'
+@keyframes color-changeTwo {
+  from {
+  }
+  to {
+    background-color: #ffdfb0b0;
+  }
+}
+@keyframes color-changeThree {
+  from {
+  }
+  to {
+    background-color: #cdeb79b6;
+  }
 }
