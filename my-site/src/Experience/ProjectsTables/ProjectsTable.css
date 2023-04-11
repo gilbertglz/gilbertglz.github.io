@@ -8,12 +8,6 @@
     flex-direction: row;
 }
 
-@media screen and (max-width: 700px) {
-    .styleThree
-    {
-        
-    }
-}
 
 .jobNavWrapper
 {
@@ -61,6 +55,23 @@
 {
     font-size: .8em;
     z-index: 1;
+}
+
+@media screen and (max-width: 1290px) 
+{
+    .jobsTextselected, .jobsText
+    {
+        font-size: 1rem;
+        white-space:break-spaces;
+    }
+  .jobTitle, .jobPara
+  {
+    font-size: 1rem;
+  }
+  .jobPara
+  {
+    font-size: 1.5rem;
+  }
 }
 .jobTime
 {
