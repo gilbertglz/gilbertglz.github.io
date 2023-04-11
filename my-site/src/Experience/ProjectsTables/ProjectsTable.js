@@ -19,7 +19,7 @@ function ProjectsTable() {
   const jobNav = 
   <nav className='jobNavWrapper'>
     {jobs.map((job, index) => (
-      <button key={index} style= {{backgroundColor:'transparent'}}onClick={() => handleClick(index)}>
+      <button key={index} className = "buttons"style= {{}}onClick={() => handleClick(index)}>
         <div className={`jobsText${indexNum === index ? 'selected' : ''}`}>
           {job}
         </div>
