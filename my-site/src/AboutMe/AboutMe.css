@@ -13,6 +13,11 @@
     margin: 5rem 15rem 10rem;
   }
 }
+@media screen and (max-width: 700px) {
+  .AboutMe {
+    margin: 1rem 1rem 10rem;
+  }
+}
 p,.listContainer
 {
   z-index: 1;
@@ -86,8 +91,8 @@ p,.listContainer
   justify-content: flex-end;
 } 
 .myImage {
-  width:calc(20em); 
-  height: calc(20em);
+  width:calc(20rem); 
+  height: calc(20rem);
   overflow:auto;
  /* set height to auto to maintain aspect ratio */
   border-radius: 50%;
@@ -95,6 +100,12 @@ p,.listContainer
   /* margin-right: 20px; add margin to separate image from list items */
   display: flex;
   align-items: center;
+}
+@media (max-width: 700px) {
+  .myImage {
+    width: 10rem;
+    height:10rem;
+  }
 }
 
 .imageContainer {

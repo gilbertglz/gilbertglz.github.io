@@ -95,3 +95,9 @@
     margin: 2rem 17rem 25rem;
   }
 }
+@media screen and (max-width: 700px) {
+  .Home {
+    margin: 1rem 5rem 10rem;
+  }
+}
+

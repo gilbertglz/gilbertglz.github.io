@@ -26,3 +26,23 @@
     color: aliceblue;
     text-decoration: none;
 }
+
+@media screen and (max-width: 700px) {
+    .logoG {
+      width: 3rem;
+      height:3rem;
+    }
+    .navigationCell
+    {
+        margin:.3rem;
+    }
+    .navigationCell a
+    {
+        font-size: 1rem;
+    }
+    .Bar
+    {
+        padding-inline: .5rem;
+        width:23rem;
+    }
+  }

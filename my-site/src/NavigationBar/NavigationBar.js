@@ -7,7 +7,7 @@ function MyHeader(props) {
 
   const NavLogo = 
   <div style ={{display:"flex", maxWidth:'5em'}}>
-    <img src={Photo} alt = "LogoG" style={{maxWidth:'100%', maxHeight:'100%'}}/>
+    <img className= "logoG" src={Photo} alt ="LogoG" style={{maxWidth:'100%', maxHeight:'100%'}}/>
   </div>;
   
   const NavCells = 

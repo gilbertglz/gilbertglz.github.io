@@ -9,6 +9,8 @@
     animation-direction: alternate; 
     position: absolute;
     right:0;
+    width:35em;
+    height:35em;
 }
 @keyframes slidein {
     from {
@@ -28,6 +30,8 @@
     animation-direction: alternate; 
     position: absolute;
     left:0;   
+    width:35em;
+    height:35em;
 }
 @keyframes slideinNegative {
     from {
@@ -37,3 +41,14 @@
       left: 50%;
     }
   }
+
+@media screen and (max-width: 700px) {
+ .Circle {
+  width: 7rem;
+  height:7rem;
+ }
+ .NegativeCircle {
+  width: 7rem;
+  height:7rem;
+ }
+}

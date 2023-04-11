@@ -4,7 +4,7 @@ import './CircleDefault.css';
 function CircleDefault (props) {
   return (
     <div style={props.parentStyle}>
-        <div className='CircleDefault' style={props.style}/>
+        <div className={props.className} style={props.style}/>
     </div>
   );
 }
