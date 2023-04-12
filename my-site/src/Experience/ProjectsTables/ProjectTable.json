@@ -1,6 +1,18 @@
 {
     "securus" : 
-    ["Redeveloped, shipped, and maintained Pearl library modules used to contact client APIs.",
-    "Identified and implemented solutions for PHP site(s) cybersecurity vulnerabilities.",
-     "Supported development of mobile app UI and functionality using Typescript."]
+    ["Developed, shipped, and maintained Perl library modules to communicate with client APIs.",
+    "Strengthened the security of PHP websites by identifying and addressing cybersecurity vulnerabilities.",
+     "Contributed to the development of a mobile app's user interface and functionality, using TypeScript."],
+     "tamu":
+     [
+        "Provided technical support to students, faculty, and staff, troubleshooting and resolving computer hardware and software issues.",
+        "Collaborated with IT staff to procure and install necessary hardware and software for library operations.",
+        "Contributed to the development and implementation of library technology initiatives, such as online resources and digital archiving systems."
+     ],
+     "gum":
+     [
+        "Assisted the teacher in developing and implementing lesson plans, fostering strong organizational and planning skills.",
+        "Provided one-on-one and group tutoring to students in mathematics, developing strong communication and problem-solving skills.",
+        "Facilitated classroom discussions and activities to enhance student learning and engagement, honing leadership and collaboration skills."
+     ]
 }

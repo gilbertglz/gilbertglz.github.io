@@ -7,7 +7,7 @@ function ProjectsTable() {
   const jobs = ['Securus Monitoring Solutions','Texas A&M University Libraries','G.U.M.'];
   const position = ['Software Developer I','Student Asst.','After-School Prog. Asst.'];
   const time = ['Aug. 2021 - Present','Sept. 2017 - May 2021','Sept. 2017 - Dec. 2018'];
-  const desc = [myJson.securus,[],[]];
+  const desc = [myJson.securus,myJson.tamu,myJson.gum];
   const links =['https://securusmonitoring.com/','https://library.tamu.edu/','https://www.galvestonurbanministries.org/'];
   
   const [indexNum, setIndex] = useState(0);
