@@ -3,7 +3,7 @@ import { Element } from 'react-scroll';
 import Home from './Home/Home.js';
 import AboutMe from './AboutMe/AboutMe';
 import Experience from './Experience/Experience.js';
-import Links from './Links/Links.js';
+import Projects from './Projects/Projects.js';
 import Contact from './Contact/Contact.js';
 import React, { useEffect } from 'react';
 import BackToUp from '@uiw/react-back-to-top';
@@ -39,8 +39,8 @@ function App () {
         <Experience/>
       </Element>
 
-      <Element name="links">
-        <Links />
+      <Element name="projects">
+        <Projects />
       </Element>
 
       <Element name="contact">
