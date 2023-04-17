@@ -30,8 +30,9 @@ function Projects() {
 
   return (
     <div className='ProjectsWrap' >
+      
+      <div className='titleHeader'>Projects</div>
       <div className="ProjectsBack">
-        
         <div className="ButtonWrapper">
           <button className="PrevButton" onClick={handlePrevClick} disabled={firstIndex === 0}>&lt;</button>
           <div className="IconWrapper">{ProjectFolders}</div>

@@ -1,14 +1,37 @@
 .ProjectsWrap {
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin: 5em 17em 10em;
+  max-width: fit-content;
+  flex-direction: column;
 }
+
+@media screen and (max-width: 1290px) 
+{
+  .ProjectsWrap
+  {
+    margin: 5em 10em 10em;
+  }
+  .ProjectsBack
+  {
+    width: 20rem;
+    height:10rem;
+  }
+}
+.titleHeader
+{
+  display: flex;
+  align-self: flex-start;
+  font-size: calc(24px + 2vmin);
+  color: #FFEBB7;
+  font-weight: 600;
+}
+
 .ProjectsBack
 {
-  background-color: #ffebb762;
+  background-color: #ff6f315e;
   width: 50rem;
   height:30rem;
   border-radius: 10%;
@@ -16,6 +39,33 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+  animation: color-changeTwo 3.5s infinite alternate;
+  flex-direction: column;
+}
+@media screen and (max-width: 1290px) 
+{
+  .ProjectsWrap
+  {
+    margin: 5em 10em 10em;
+  }
+}
+@media screen and (max-width: 700px) 
+{
+  .ProjectsWrap
+  {
+    margin: auto;
+  }
+  .ProjectsBack
+  {
+    width:20rem;
+  }
+}
+@keyframes color-changeTwo {
+  from {
+  }
+  to {
+    background-color: #ffdfb054;
+  }
 }
 .IconWrapper
 {
@@ -34,7 +84,7 @@
 }
 .FolderIcon {
   font-size: 10rem;
-  color: black;
+  color: #5eb3a886;
 }
 .FolderText {
   position: absolute;
