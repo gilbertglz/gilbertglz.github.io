@@ -59,4 +59,12 @@
   font-size: 2rem;
   border-radius: 50%;
 }
-
+@media screen and (max-width: 700px) {
+  .FolderIcon {
+    font-size: 8rem;
+  }
+  .FolderText
+  {
+    font-size: 1.2rem;
+  }
+}

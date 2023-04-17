@@ -6,7 +6,7 @@ import React from "react";
 function Home () {
 
   return (
-    <div className="" style={{}}>
+    <div className="">
       <CirclesHome />
       <div className='Home'>
       <div className='headerContainer'>
