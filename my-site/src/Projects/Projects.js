@@ -3,16 +3,26 @@ import { BsFolderFill } from 'react-icons/bs';
 import { useState } from 'react';
 
 function Projects() {
-  const Projects = ['Car Shop Invoice', 'Project2', 'Project 3'];
+  const Projects = ['Invoice Generator', 'Laredo Land API', 'This Site'];
   const Links = ['https://github.com/gilbertglz/CarShopInvoice', '', ''];
   const [firstIndex, setFirstIndex] = useState(0);
+  const [clickIndex, setCurrentIndex] = useState(0);
+  const handleClick = (index) => {
+    setCurrentIndex(index);
+    console.log(index);
+  };
+  const Content = [
+    'This is the content for Invoice Generator project.',
+    'This is the content for Laredo Land API project.',
+    'This is the content for This Site project.',
+  ];
 
   const currentProjects = Projects.slice(firstIndex, firstIndex + 3);
   const ProjectFolders = currentProjects.map((project, index) => (
     <div className="Folder" key={index}>
       <div className='BackArrow'></div>
-      <a href={Links[index]}><BsFolderFill className="FolderIcon" /></a>
-      <span className="FolderText" ><a href={Links[index]}>{project}</a></span>
+      <BsFolderFill className="FolderIcon" />
+      <span className="FolderText" onClick={()=>handleClick(index)}>{project}</span>
       <div className='ForwardArrow'></div>
     </div>
   ));
@@ -30,8 +40,7 @@ function Projects() {
   };
 
   return (
-    <div className='ProjectsWrap' >
-      
+    <div className='ProjectsWrap' >    
       <div className='titleHeader'>Projects</div>
       <div className="ProjectsBack">
         <div className="ButtonWrapper">
@@ -40,6 +49,7 @@ function Projects() {
           <button className="NextButton" onClick={handleNextClick} disabled={firstIndex + 3 >= Projects.length}>&gt;</button>
         </div>
       </div>
+      <div className="Content">{Content[clickIndex]}</div>
     </div>
   );
 }

@@ -36,15 +36,15 @@
 
 .ProjectsBack
 {
-  background-color: #ff6f315e;
+  /* background-color: #ff6f315e; */
   width: 50rem;
-  height:30rem;
+  /* height:30rem; */
   border-radius: 10%;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  animation: color-changeTwo 3.5s infinite alternate;
+  /* animation: color-changeTwo 3.5s infinite alternate; */
   flex-direction: column;
 }
 @media screen and (max-width: 1290px) 
