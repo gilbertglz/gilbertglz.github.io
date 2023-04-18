@@ -3,15 +3,16 @@ import { BsFolderFill } from 'react-icons/bs';
 import { useState } from 'react';
 
 function Projects() {
-  const Projects = ['Car Shop Invoice', 'Project2', 'Project 3', 'Project 4', 'Project 5', 'Project 6'];
+  const Projects = ['Car Shop Invoice', 'Project2', 'Project 3'];
+  const Links = ['https://github.com/gilbertglz/CarShopInvoice', '', ''];
   const [firstIndex, setFirstIndex] = useState(0);
 
   const currentProjects = Projects.slice(firstIndex, firstIndex + 3);
   const ProjectFolders = currentProjects.map((project, index) => (
     <div className="Folder" key={index}>
       <div className='BackArrow'></div>
-      <BsFolderFill className="FolderIcon" />
-      <span className="FolderText">{project}</span>
+      <a href={Links[index]}><BsFolderFill className="FolderIcon" /></a>
+      <span className="FolderText" ><a href={Links[index]}>{project}</a></span>
       <div className='ForwardArrow'></div>
     </div>
   ));
