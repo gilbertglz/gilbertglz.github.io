@@ -1,6 +1,8 @@
 import './Projects.css';
 import { BsFolderFill } from 'react-icons/bs';
 import { useState } from 'react';
+import myJsonToo from './Project.json';
+import Circle from '../Circle/CircleDefault.js'
 
 function Projects() {
   const Projects = ['Invoice Generator', 'Laredo Land API', 'This Site'];
@@ -12,7 +14,7 @@ function Projects() {
     console.log(index);
   };
   const Content = [
-    'This is the content for Invoice Generator project.',
+    myJsonToo.invoice,
     'This is the content for Laredo Land API project.',
     'This is the content for This Site project.',
   ];
@@ -50,6 +52,7 @@ function Projects() {
         </div>
       </div>
       <div className="Content">{Content[clickIndex]}</div>
+      
     </div>
   );
 }

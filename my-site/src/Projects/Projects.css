@@ -69,6 +69,10 @@
   justify-content: center;
   align-content: center;
 }
+.Folder:hover {
+  opacity: 0.8;
+}
+
 .Folder {
   display: flex;
   flex-direction: column;
@@ -106,11 +110,11 @@
 }
 @media screen and (max-width: 700px) {
   .FolderIcon {
-    font-size: 8rem;
+    font-size: 5rem;
   }
   .FolderText
   {
-    font-size: 1.2rem;
+    font-size: .8rem;
   }
   .ProjectsWrap
   {
@@ -119,9 +123,21 @@
   .ProjectsBack
   {
     width:20rem;
+    align-self: center;
+    height:auto;
   }
   .PrevButton,.NextButton
   {
     font-size: 1rem;
   }
+  .Folder
+  {
+    margin:0rem;
+  }
+}
+.Content
+{
+  width: 40rem;
+  align-self: center;
+  display: flex;
 }
